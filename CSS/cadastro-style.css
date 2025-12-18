@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cinzel', serif;
+    background-color: #E9E6D8;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #53705D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    min-height: 100px;
+    transition: all 0.3s ease;
+}
+
+.logo-aurea-lado img {
+    height: 85px;
+    width: auto;
+    display: block;
+}
+
+.barra-nav {
+    flex: 1;
+    max-width: 600px;
+    margin: 0 40px;
+}
+
+.barra-nav input[type="text"] {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 1px solid #EBC4C4;
+    border-radius: 2px;
+    color: #EBC4C4;
+    font-size: 1rem;
+    outline: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #EBC4C4;
+    font-size: 1.1rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.link-favoritos {
+    display: flex;
+}
+
+.icon {
+    height: 24px;
+    width: auto;
+    filter: drop-shadow(0 0 0 #EBC4C4);
+}
+
+.breadcrumb-container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 20px auto 0 auto;
+    font-family: 'Cinzel', serif;
+}
+
+.breadcrumb-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.breadcrumb-item {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: #53705D;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb-item a:hover {
+    color: #95A68A;
+    text-decoration: underline;
+}
+
+.breadcrumb-item.active {
+    color: #53705D;
+    font-weight: 700;
+    cursor: default;
+}
+
+.breadcrumb-separator {
+    margin: 0 10px;
+    color: #53705D;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.login-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cadastro-card {
+    background-color: #95A68A;
+    padding: 50px 60px;
+    border-radius: 8px;
+    max-width: 950px;
+    text-align: center;
+    color: #FFFFFF;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.cadastro-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 35px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 25px;
+    width: 100%;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.group-nome {
+    flex: 3;
+}
+
+.group-idade {
+    flex: 1;
+    min-width: 80px;
+}
+
+.group-email {
+    flex: 3;
+}
+
+.group-senha,
+.group-confirma {
+    flex: 1;
+}
+
+.input-group label {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+}
+
+.input-group input {
+    background-color: transparent;
+    border: 2px solid #53705D;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    font-family: 'Cinzel', serif;
+}
+
+.input-group input:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-entrar {
+    background-color: #53705D;
+    color: #FFFFFF;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: 'Cinzel', serif;
+    margin: 20px auto 0 auto;
+    letter-spacing: 1px;
+    transition: opacity 0.3s;
+    width: 250px;
+}
+
+.btn-entrar:hover {
+    opacity: 0.9;
+}
+
+footer {
+    background-color: #53705D;
+    color: #EBC4C4;
+    padding: 30px 20px;
+    text-transform: uppercase;
+}
+
+.footer-linha-horizontal {
+    height: 2px;
+    background-color: #EBC4C4;
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto 40px auto;
+}
+
+.footer-conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.footer-coluna {
+    flex: 1;
+}
+
+.logo-coluna {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-coluna img {
+    width: 150px;
+    height: auto;
+}
+
+.links-coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 10px;
+    align-items: flex-start;
+}
+
+.links-coluna a {
+    color: #EBC4C4;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: opacity 0.3s;
+}
+
+.links-coluna a:hover {
+    opacity: 0.8;
+}
+
+.footer-linha-vertical {
+    width: 2px;
+    background-color: #EBC4C4;
+    align-self: stretch;
+    height: auto;
+    min-height: 150px;
+}
+
+.pagamentos-coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+.pagamentos-coluna h3 {
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.pagamentos-coluna img {
+    width: 200px;
+    height: auto;
+}
+
+@media (max-width: 1024px) {
+    header { padding: 0 3%; }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 15px 5%;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .logo-aurea-lado img { height: 60px; }
+
+    nav { order: 2; width: 100%; }
+    nav ul { justify-content: center; }
+
+    .barra-nav {
+        order: 3;
+        width: 100%;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .breadcrumb-item {
+        font-size: 0.9rem;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .cadastro-card {
+        padding: 30px 20px;
+    }
+
+    .btn-entrar {
+        width: 100%;
+    }
+
+    .footer-conteudo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-linha-vertical { display: none; }
+    .links-coluna { align-items: center; }
+    .pagamentos-coluna { align-items: center; }
+}

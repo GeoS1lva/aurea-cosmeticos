@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áurea Cosméticos</title>
+    <link rel="stylesheet" href="CSS/cadastro-style.css">
+    <script src="JS/cadastro-script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-aurea-lado">
+            <a href="index.html">
+                <img src="IMG/Logo_Aurea_Lado.png" alt="Áurea Cosméticos"> 
+            </a>
+        </div>
+
+        <form class="barra-nav">
+            <input type="text" placeholder="">
+        </form>
+
+        <nav>
+            <ul>
+                <li>
+                    <img src="IMG/icons/usuario.png" alt="Usuario" class="icon">
+                    <a href="login.html">Login |</a>
+                </li>
+                <li>
+                    <a href="favoritos.html" class="link-favoritos">
+                        <img src="IMG/icons/coracao.png" alt="Favoritos" class="icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="carrinho.html">
+                        <img src="IMG/icons/carrinho-de-compras.png" alt="Carrinho" class="icon">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+     <nav aria-label="breadcrumb" class="breadcrumb-container">
+            <ol class="breadcrumb-list">
+                <li class="breadcrumb-item">
+                    <a href="index.html">Home</a>
+                </li>
+                
+                <li class="breadcrumb-separator">›</li>
+                
+                <li class="breadcrumb-item active" aria-current="page">
+                    Cadastrar
+                </li>
+            </ol>
+        </nav>
+
+    <main>
+        <section class="login-section">
+            <div class="cadastro-card">
+                <h2>CADASTRE-SE!</h2>
+                
+                <form class="login-form" id="formCadastro">
+                    
+                    <div class="form-row row-top">
+                        <div class="input-group group-nome">
+                            <label for="nome">NOME</label>
+                            <input type="text" id="nome" required>
+                        </div>
+
+                        <div class="input-group group-idade">
+                            <label for="idade">IDADE</label>
+                            <input type="number" id="idade" required min="18" max="120">
+                        </div>
+
+                        <div class="input-group group-email">
+                            <label for="email">E-MAIL</label>
+                            <input type="email" id="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row row-bottom">
+                        <div class="input-group group-senha">
+                            <label for="senha">SENHA</label>
+                            <input type="password" id="senha" required>
+                        </div>
+
+                        <div class="input-group group-confirma">
+                            <label for="confirmaSenha">CONFIRME A SENHA</label>
+                            <input type="password" id="confirmaSenha" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-entrar">CADASTRAR</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-linha-horizontal"></div>
+
+        <div class="footer-conteudo">
+            
+            <div class="footer-coluna logo-coluna">
+                <img src="IMG/rodape/Logo_Aurea_Banner.png" alt="Áurea Cosméticos Logo">
+            </div>
+
+            <div class="footer-coluna links-coluna">
+                <a href="https://wa.me/554499802332*?text=Ol%C3%A1%2C%20vim%20pelo%20site!%20Gostaria%20de%20conversar%20com%20um%20Farmac%C3%AAutico" target="_blank">
+                    FALE CONOSCO
+                </a>
+                <a href="sobre-empresa.html">SOBRE NÓS</a>
+                <a href="formulario-receita.html">MANIPULE SUA RECEITA</a>
+            </div>
+
+            <div class="footer-linha-vertical"></div>
+
+            <div class="footer-coluna pagamentos-coluna">
+                <h3>FORMAS DE PAGAMENTO</h3>
+                <img src="IMG/rodape/formas-de-pagamento.png" alt="Ícones de formas de pagamento">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

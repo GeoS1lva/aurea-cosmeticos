@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áurea Cosméticos</title>
+    <link rel="stylesheet" href="CSS/produtos-style.css">
+    <script src="JS/produto-script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-aurea-lado">
+            <a href="index.html">
+                <img src="IMG/Logo_Aurea_Lado.png" alt="Áurea Cosméticos"> 
+            </a>
+        </div>
+
+        <form class="barra-nav">
+            <input type="text" placeholder="">
+        </form>
+
+        <nav>
+            <ul>
+                <li>
+                    <img src="IMG/icons/usuario.png" alt="Usuario" class="icon">
+                    <a href="login.html">Login |</a>
+                </li>
+                <li>
+                    <a href="favoritos.html" class="link-favoritos">
+                        <img src="IMG/icons/coracao.png" alt="Favoritos" class="icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="carrinho.html">
+                        <img src="IMG/icons/carrinho-de-compras.png" alt="Carrinho" class="icon">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav aria-label="breadcrumb" class="breadcrumb-container">
+        <ol class="breadcrumb-list">
+            <li class="breadcrumb-item">
+                <a href="index.html">Home</a>
+            </li>
+                
+            <li class="breadcrumb-separator">›</li>
+                
+            <li class="breadcrumb-item active" aria-current="page">
+                Protetor Solar
+            </li>
+        </ol>
+    </nav>
+    
+    <main class="pagina-produto">
+        
+        <section class="produto-hero" data-nome="Protetor Solar">
+            
+            <div class="produto-imagem-container">
+                <img src="IMG/produtos/ProtetorSolar.png" alt="Protetor Solar" class="produto-foto-principal">
+            </div>
+
+            <div class="produto-info">
+                <h1 class="produto-titulo">PROTETOR SOLAR - 60g</h1>
+                
+                <ul class="lista-beneficios">
+                    <li>Textura leve e toque seco</li>
+                    <li>Alta fotoestabilidade</li>
+                    <li>Ampla proteção UVA e UVB</li>
+                    <li>Ação antioxidante e anti-idade</li>
+                    <li>Sensação suave e confortável</li>
+                    <li>Não obstrui poros</li>
+                    <li>Estabilidade aprimorada</li>
+                    <li>Indicado para uso diário e reaplicações</li>
+                </ul>
+
+                <div class="preco-box">
+                    <div class="preco-atual">R$139,90</div>
+                    <div class="preco-parcelado">ou 2x de R$69,95</div>
+                </div>
+
+                <div class="acoes-compra">
+                    <div class="seletor-qtd">
+                        <button class="qtd-btn">-</button>
+                        <input type="text" value="0" class="qtd-input" readonly>
+                        <button class="qtd-btn">+</button>
+                    </div>
+
+                    <button class="btn-adicionar">Adicionar ao Carrinho</button>
+
+                    <button class="btn-favorito" title="Adicionar aos favoritos">
+                        <img src="IMG/icons/coracao.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao-infos-extras">
+            
+            <div class="info-card">
+                <h3 class="info-titulo">Modo de Uso:</h3>
+                <div class="info-linha"></div>
+                <p class="info-texto">
+                    Aplicar uma quantidade adequada do produto sobre a pele seca, espalhando uniformemente até completa absorção. Reaplicar a cada 2 horas, especialmente após suor excessivo, natação, atividade física ou secar-se com toalha. Para uso diário, reaplique ao longo do dia sempre que houver exposição ao sol.
+                </p>
+                <img src="IMG/icons/cosmeticos.png" class="info-icone" alt="Ícone cosmético">
+            </div>
+
+            <div class="info-card">
+                <h3 class="info-titulo">Composição:</h3>
+                <div class="info-linha"></div>
+                <p class="info-texto">
+                    Aqua, Octocrylene, Butyl Methoxydibenzoylmethane, Phenylbenzimidazole Sulfonic Acid, Triheptanoin, Propanediol Dicaprylate/Caprate, Diisopropyl Sebacate, Ethylhexyl Triazone, Methylene Bis-Benzotriazolyl Tetramethylbutylphenol, Silica, Niacinamide, Diethylamino Hydroxybenzoyl Hexyl Benzoate, Polyglyceryl-6 Stearate, Glyceryl Stearate, PEG-100 Stearate, Decyl Glucoside, Sodium Hydroxide, 1,2-Hexanediol, Caprylyl Glycol, Xanthan Gum, Sodium Gluconate, Hydroxyacetophenone.
+                </p>
+                <img src="IMG/icons/cosmeticos.png" class="info-icone" alt="Ícone composição">
+            </div>
+
+            <div class="info-card">
+                <h3 class="info-titulo">Advertência:</h3>
+                <div class="info-linha"></div>
+                <div class="info-texto">
+                    <ul style="list-style: none; padding: 0;">
+                        <li>• Aplicar uma quantidade adequada do produto sobre a pele seca, espalhando uniformemente até completa absorção.</li>
+                        <li>• Reaplicar a cada 2 horas, especialmente após suor excessivo, natação, atividade física ou secar-se com toalha.</li>
+                        <li>• Para uso diário, reaplique ao longo do dia sempre que houver exposição ao sol.</li>
+                    </ul>
+                </div>
+                <img src="IMG/icons/ponto-de-exclamacao.png" class="info-icone" alt="Ícone advertência">
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-linha-horizontal"></div>
+
+        <div class="footer-conteudo">
+            
+            <div class="footer-coluna logo-coluna">
+                <img src="IMG/rodape/Logo_Aurea_Banner.png" alt="Áurea Cosméticos Logo">
+            </div>
+
+            <div class="footer-coluna links-coluna">
+                <a href="https://wa.me/554499802332*?text=Ol%C3%A1%2C%20vim%20pelo%20site!%20Gostaria%20de%20conversar%20com%20um%20Farmac%C3%AAutico" target="_blank">
+                    FALE CONOSCO
+                </a>
+                <a href="sobre-empresa.html">SOBRE NÓS</a>
+                <a href="formulario-receita.html">MANIPULE SUA RECEITA</a>
+            </div>
+
+            <div class="footer-linha-vertical"></div>
+
+            <div class="footer-coluna pagamentos-coluna">
+                <h3>FORMAS DE PAGAMENTO</h3>
+                <img src="IMG/rodape/formas-de-pagamento.png" alt="Ícones de formas de pagamento">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

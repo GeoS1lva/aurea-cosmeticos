@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áurea Cosméticos</title>
+    <link rel="stylesheet" href="CSS/produtos-style.css">
+    <script src="JS/produto-script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-aurea-lado">
+            <a href="index.html">
+                <img src="IMG/Logo_Aurea_Lado.png" alt="Áurea Cosméticos"> 
+            </a>
+        </div>
+
+        <form class="barra-nav">
+            <input type="text" placeholder="">
+        </form>
+
+        <nav>
+            <ul>
+                <li>
+                    <img src="IMG/icons/usuario.png" alt="Usuario" class="icon">
+                    <a href="login.html">Login |</a>
+                </li>
+                <li>
+                    <a href="favoritos.html" class="link-favoritos">
+                        <img src="IMG/icons/coracao.png" alt="Favoritos" class="icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="carrinho.html">
+                        <img src="IMG/icons/carrinho-de-compras.png" alt="Carrinho" class="icon">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav aria-label="breadcrumb" class="breadcrumb-container">
+        <ol class="breadcrumb-list">
+            <li class="breadcrumb-item">
+                <a href="index.html">Home</a>
+            </li>
+                
+            <li class="breadcrumb-separator">›</li>
+                
+            <li class="breadcrumb-item active" aria-current="page">
+                Hidratante Facial
+            </li>
+        </ol>
+    </nav>
+    
+    <main class="pagina-produto">
+
+        <section class="produto-hero" data-nome="Hidratante Facial">
+            
+            <div class="produto-imagem-container">
+                <img src="IMG/produtos/Hidratante_Facial.png" alt="Hidratante Facial" class="produto-foto-principal">
+            </div>
+
+            <div class="produto-info">
+                <h1 class="produto-titulo">HIDRATANTE FACIAL - 50g</h1>
+                
+                <ul class="lista-beneficios">
+                    <li>Hidratante de textura leve e rápida absorção</li>
+                    <li>Hidratante de textura leve e rápida absorção</li>
+                    <li>Hidratação biomimética e de múltiplas camadas</li>
+                    <li>Poder antioxidante</li>
+                    <li>Ação calmante e revitalizante</li>
+                    <li>Fórmula clean & natural</li>
+                    <li>Livre de petrolatos, silicones pesados e parabenos</li>
+                    <li>Estável e seguro</li>
+                    <li>Adequado para todos os tipos de pele</li>
+                </ul>
+
+                <div class="preco-box">
+                    <div class="preco-atual">R$99,90</div>
+                    <div class="preco-parcelado">ou 2x de R$49,95</div>
+                </div>
+
+                <div class="acoes-compra">
+                    <div class="seletor-qtd">
+                        <button class="qtd-btn">-</button>
+                        <input type="text" value="0" class="qtd-input" readonly>
+                        <button class="qtd-btn">+</button>
+                    </div>
+
+                    <button class="btn-adicionar">Adicionar ao Carrinho</button>
+
+                    <button class="btn-favorito" title="Adicionar aos favoritos">
+                        <img src="IMG/icons/coracao.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao-infos-extras">
+            
+            <div class="info-card">
+                <h3 class="info-titulo">Modo de Uso:</h3>
+                <div class="info-linha"></div>
+                <p class="info-texto">
+                    Aplicar uma pequena quantidade sobre o rosto limpo e seco, massageando suavemente até completa absorção. Usar uma a duas vezes ao dia, pela manhã e/ou à noite. Para uso diurno, aplicar protetor solar após o creme</p>
+                <img src="IMG/icons/cosmeticos.png" class="info-icone" alt="Ícone cosmético">
+            </div>
+
+            <div class="info-card">
+                <h3 class="info-titulo">Composição:</h3>
+                <div class="info-linha"></div>
+                <p class="info-texto">
+                    Aqua, Coco-Caprylate/Caprate, Cetearyl Olivate, Sorbitan Olivate, Butyrospermum Parkii Butter, Pentylene Glycol, Cetearyl Alcohol, Glycerin, Glyceryl Stearate, Propanediol, Glyceryl Caprylate, Rosa Canina Fruit Oil, Hydroxyethylcellulose, Tocopherol, Rosa Gallica Flower Extract, Sodium Hyaluronate, Biosaccharide Gum-1, Sodium Phytate, Citric Acid, Parfum, Glucose, Sodium Levulinate, Sodium Anisate, Benzyl Alcohol, Dehydroacetic Acid. Origem natural.
+                </p>
+                <img src="IMG/icons/cosmeticos.png" class="info-icone" alt="Ícone composição">
+            </div>
+
+            <div class="info-card">
+                <h3 class="info-titulo">Advertência:</h3>
+                <div class="info-linha"></div>
+                <div class="info-texto">
+                    <ul style="list-style: none; padding: 0;">
+                        <li>• Uso Externo.</li>
+                        <li>• Manter fora do alcance de crianças.</li>
+                        <li>• Evitar contato com os olhos; em caso de contato, enxaguar com água em abundância.</li>
+                        <li>• Não aplicar em pele irritada ou lesionada.</li>
+                        <li>• Caso ocorra irritação, suspender o uso e procurar orientação profissional.</li>
+                        <li>• Conservar ao abrigo da luz, calor e umidade.</li>
+                        <li>• Não ingerir.</li>
+                    </ul>
+                </div>
+                <img src="IMG/icons/ponto-de-exclamacao.png" class="info-icone" alt="Ícone advertência">
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-linha-horizontal"></div>
+
+        <div class="footer-conteudo">
+            
+            <div class="footer-coluna logo-coluna">
+                <img src="IMG/rodape/Logo_Aurea_Banner.png" alt="Áurea Cosméticos Logo">
+            </div>
+
+            <div class="footer-coluna links-coluna">
+                <a href="https://wa.me/554499802332*?text=Ol%C3%A1%2C%20vim%20pelo%20site!%20Gostaria%20de%20conversar%20com%20um%20Farmac%C3%AAutico" target="_blank">
+                    FALE CONOSCO
+                </a>
+                <a href="sobre-empresa.html">SOBRE NÓS</a>
+                <a href="formulario-receita.html">MANIPULE SUA RECEITA</a>
+            </div>
+
+            <div class="footer-linha-vertical"></div>
+
+            <div class="footer-coluna pagamentos-coluna">
+                <h3>FORMAS DE PAGAMENTO</h3>
+                <img src="IMG/rodape/formas-de-pagamento.png" alt="Ícones de formas de pagamento">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áurea Cosméticos</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-aurea-lado">
+            <a href="index.html">
+                <img src="IMG/Logo_Aurea_Lado.png" alt="Áurea Cosméticos"> 
+            </a>
+        </div>
+
+        <form>
+            <input type="text" placeholder="">
+        </form>
+
+        <nav>
+            <ul>
+                <li>
+                    <img src="IMG/icons/usuario.png" alt="Usuario" class="icon">
+                    <a href="login.html">Login |</a>
+                </li>
+                <li>
+                    <a href="favoritos.html" class="link-favoritos">
+                        <img src="IMG/icons/coracao.png" alt="Favoritos" class="icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="carrinho.html">
+                        <img src="IMG/icons/carrinho-de-compras.png" alt="Carrinho" class="icon">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner-propaganda">
+             <button class="botao-navegacao prev" onclick="mudarBanner(-1)">
+                <img src="IMG/icons/seta-para-a-esquerda.png" alt="Anterior">
+            </button>
+
+            <img src="IMG/banner/banner_propaganda_serum.png" alt="Banner Áurea" class="banner-img" id="img-banner">
+
+            <button class="botao-navegacao next" onclick="mudarBanner(1)">
+                <img src="IMG/icons/seta-para-a-esquerda.png" alt="Próximo">
+            </button>
+        </section>
+
+        <section class="banner-frete">
+            <div class="track-animacao">
+                <img src="IMG/icons/caminhao-de-carga.png" alt="Entrega" class="caminhao-animado">
+            </div>
+
+            <p class="texto-frete">
+                Frete Grátis | Consulte sua região e aproveite!
+            </p>
+        </section>
+
+        <section class="produtos-prontos-carrosel">
+            <h2>NOSSOS PRODUTOS PRONTOS</h2>
+
+            <div class="carousel-wrapper">
+                <button class="botao-navegacao prev-prod" id="btn-voltar-prod">
+                    <img src="IMG/icons/seta-para-a-esquerda.png" alt="Anterior">
+                </button>
+
+                <div class="cards-track">
+                    
+                    <div class="card-produto">
+                        <div class="imagem-container">
+                            <img src="IMG/produtos/Gel_Limpeza_Facial.png" alt="Gel de Limpeza Facial" class="foto-produto">
+                            <button class="btn-favorito"><img src="IMG/icons/coracao.png" alt="Favoritar"></button>
+                        </div>
+                        <div class="linha-divisoria"></div>
+                        <p class="nome-produto">Gel de Limpeza Facial</p>
+                        <a href="gel-limpeza-facial.html" class="saiba-mais">Saiba Mais</a>
+                    </div>
+
+                    <div class="card-produto">
+                        <div class="imagem-container">
+                            <img src="IMG/produtos/Hidratante_Facial.png" alt="Hidratante Facial" class="foto-produto">
+                            <button class="btn-favorito"><img src="IMG/icons/coracao.png" alt="Favoritar"></button>
+                        </div>
+                        <div class="linha-divisoria"></div>
+                        <p class="nome-produto">Hidratante Facial</p>
+                        <a href="hidratante-facial.html" class="saiba-mais">Saiba Mais</a>
+                    </div>
+
+                    <div class="card-produto">
+                        <div class="imagem-container">
+                            <img src="IMG/produtos/Serum_Facil.png" alt="Serum Facial" class="foto-produto">
+                            <button class="btn-favorito"><img src="IMG/icons/coracao.png" alt="Favoritar"></button>
+                        </div>
+                        <div class="linha-divisoria"></div>
+                        <p class="nome-produto">Sérum Facial</p>
+                        <a href="serum-facial.html" class="saiba-mais">Saiba Mais</a>
+                    </div>
+
+                    <div class="card-produto">
+                        <div class="imagem-container">
+                            <img src="IMG/produtos/ProtetorSolar.png" alt="Protetor Solar" class="foto-produto">
+                            <button class="btn-favorito"><img src="IMG/icons/coracao.png" alt="Favoritar"></button>
+                        </div>
+                        <div class="linha-divisoria"></div>
+                        <p class="nome-produto">Protetor Solar</p>
+                        <a href="protetor-solar.html" class="saiba-mais">Saiba Mais</a>
+                    </div>
+
+                </div>
+
+                <button class="botao-navegacao next-prod" id="btn-avancar-prod">
+                    <img src="IMG/icons/seta-para-a-esquerda.png" alt="Próximo">
+                </button>
+            </div>
+        </section>
+
+        <section class="secao-manipulacao">
+            <div class="container-manipulacao">
+                
+                <div class="header-banner">
+                    <div class="linha-decorativa"></div>
+                </div>
+
+                <div class="corpo-banner">
+                    <div class="texto-banner">
+                        <h2>MANIPULE SUA<br>RECEITA CONOSCO</h2>
+                        <p>PREENCHA O FORMULÁRIO E FALE COM UM<br>DOS NOSSOS FARMACÊUTICOS</p>
+                    </div>
+                    
+                    <div class="botao-wrapper">
+                        <a href="formulario-receita.html" class="btn-formulario">FORMULÁRIO</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="loja-fisica">
+            
+            <div class="cabecalho-loja">
+                <h2>NOSSA LOJA FÍSICA</h2>
+                <div class="linha-verde"></div>
+            </div>
+
+            <div class="grid-loja">
+                
+                <div class="area-a">
+                    <img src="IMG/loja/Adobe Express - file.png" alt="Fachada da Loja" class="imagem-a">
+                    <img src="IMG/loja/Adobe Express - file (1).png" alt="Fachada da Loja" class="imagem-b">
+                </div>
+
+                <div class="area-b">
+                    <img src="IMG/loja/Fachata_Estabelecimento.png" alt="Logo na Fachada">
+                </div>
+
+                <div class="area-d info-container">
+                    <div class="conteudo-info">
+                        <h3>VENHA NOS VISITAR!</h3>
+
+                        <div class="info-item">
+                            <img src="IMG/icons/mapa.png" class="icon-loja" alt="Ícone Mapa">
+                            <p>MARINGÁ - PR</p>
+                        </div>
+
+                        <div class="info-item">
+                            <img src="IMG/icons/pin-de-localizacao.png" class="icon-loja" alt="Ícone Pin">
+                            <p>Avenida Getúlio Vargas, nº 915<br>Centro - 87013-000</p>
+                        </div>
+
+                        <button class="btn-mapa">VER NO MAPA</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-linha-horizontal"></div>
+
+        <div class="footer-conteudo">
+            
+            <div class="footer-coluna logo-coluna">
+                <img src="IMG/rodape/Logo_Aurea_Banner.png" alt="Áurea Cosméticos Logo">
+            </div>
+
+            <div class="footer-coluna links-coluna">
+                <a href="https://wa.me/554499802332*?text=Ol%C3%A1%2C%20vim%20pelo%20site!%20Gostaria%20de%20conversar%20com%20um%20Farmac%C3%AAutico" target="_blank">
+                    FALE CONOSCO
+                </a>
+                <a href="sobre-empresa.html">SOBRE NÓS</a>
+                <a href="formulario-receita.html">MANIPULE SUA RECEITA</a>
+            </div>
+
+            <div class="footer-linha-vertical"></div>
+
+            <div class="footer-coluna pagamentos-coluna">
+                <h3>FORMAS DE PAGAMENTO</h3>
+                <img src="IMG/rodape/formas-de-pagamento.png" alt="Ícones de formas de pagamento">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
